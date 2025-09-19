@@ -6,8 +6,10 @@ import { BsMouse } from "react-icons/bs";
 export default function HomePege() {
   return (
     <>
+      {/* backgrond */}
       <Particles />
       <div className="z-10 flex flex-col items-center">
+        {/* contnt */}
         <div className="text-center text-white w-full h-[70vh] flex flex-col justify-center">
           <h1 className="lg:text-6xl text-5xl  font-bold mb-4 animate-pulse limelight-regular font-[Limelight] ">
             Welcome to My Website 👋
@@ -28,6 +30,7 @@ export default function HomePege() {
             </div>
           </p>
         </div>
+        {/* the sits container */}
         <Container />
       </div>
     </>
