@@ -14,7 +14,7 @@ export default function HomePege() {
           <h1 className="lg:text-6xl text-5xl  font-bold mb-4 animate-pulse limelight-regular font-[Limelight] ">
             Welcome to My Website 👋
           </h1>
-          <p className=" text-xl  mb-8 flex flex-col lg:gap-3 gap-8">
+          <p className=" text-xl px-3 lg:px-0 mb-8 flex flex-col lg:gap-3 gap-8">
             On this site there is a collection of other sites developed by Saif
             Ahmed. <br /> There are more than 30 different designs. <br />
             <a
