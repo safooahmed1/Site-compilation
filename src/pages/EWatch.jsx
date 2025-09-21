@@ -14,9 +14,9 @@ import { PiPlanetBold } from "react-icons/pi";
 
 export default function EWatch() {
   return (
-    <section className="h-screen w-full flex flex-row bg-white">
+    <section className="h-screen w-full flex flex-row bg-white overflow-hidden">
       {/* section-01 - Content */}
-      <div className="order-1 w-1/2 flex flex-col p-[64px] gap-9 ms-10 ">
+      <div className="order-1 w-1/2 flex flex-col p-[64px] gap-9 ms-10 animate__animated animate__fadeInLeft ">
         {/* elsa3a eli btlf */}
         <span className="text-black text-xl relative w-[102px] h-[102px] ">
           <img
@@ -41,10 +41,10 @@ export default function EWatch() {
             diam.
           </p>
           <div className="flex gap-8">
-            <button className="px-[50px] py-[20px] text-[24px] rounded-3xl bg-black">
+            <button className="px-[50px] py-[20px] text-[24px] rounded-3xl border-2 border-black bg-black hover:bg-white hover:text-black hover:border-2 duration-400">
               Order now
             </button>
-            <button className="px-[50px] py-[20px] text-[24px] rounded-3xl border-2 text-black">
+            <button className="px-[50px] py-[20px] text-[24px] rounded-3xl border-2 text-black hover:bg-black hover:text-white duration-400">
               Explore more
             </button>
           </div>
@@ -72,7 +72,7 @@ export default function EWatch() {
       </div>
 
       {/* section-02 - Images */}
-      <div className="order-2 w-1/2 relative flex items-center justify-center">
+      <div className="order-2 w-1/2 relative flex items-center justify-center animate__animated animate__fadeInRight">
         <div className="relative w-[635.31px] h-[778.19px] flex items-center justify-center">
           {/* Chats */}
           <div>
