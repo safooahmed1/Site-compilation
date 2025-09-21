@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import pro1 from "../assets/pro1.png"
 import pro2 from "../assets/pro2.png"
+import pro3 from "../assets/pro3.png"
 
 export default function Container() {
   return (
@@ -15,8 +16,8 @@ export default function Container() {
         <Link to="/coffee" className="group w-96 h-auto rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 flex items-center justify-center bg-black/20 overflow-hidden text-white font-bold text-xl">
         <img src={pro2} alt="Project preview" className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-110" />
         </Link>
-        <Link to="/project3" className="group w-96 h-auto rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 flex items-center justify-center bg-black/20 overflow-hidden text-white font-bold text-xl">
-          Project 3
+        <Link to="/TheCreativeGateway" className="group w-96 h-auto rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 flex items-center justify-center bg-black/20 overflow-hidden text-white font-bold text-xl">
+        <img src={pro3} alt="Project preview" className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-110" />
         </Link>
         <Link to="/project4" className="group w-96 h-auto rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 flex items-center justify-center bg-black/20 overflow-hidden text-white font-bold text-xl">
           Project 4
