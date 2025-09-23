@@ -4,18 +4,29 @@ import EWatch from "./pages/EWatch";
 import Coffee from "./pages/Coffee";
 import TheCreativeGateway from "./pages/TheCreativeGateway";
 import Burgerz from "./pages/Burgerz";
+import HealthyFood from "./pages/HealthyFood";
 
 export default function App() {
   return (
     <div>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<HomePege/>} />
-          <Route path="/eWatch" element={<EWatch/>} />
-          <Route path="/coffee" element={<Coffee/>} />
-          <Route path="/TheCreativeGateway" element={<TheCreativeGateway/>}/>
-          <Route path="/burgerz" element={<Burgerz/>} />
-          <Route path="*" element={<h1 className="flex justify-center items-center h-screen text-6xl text-gray-600">Error | 404</h1>} />
+          <Route path="/">
+            <Route index element={<HomePege />} />
+            <Route path="eWatch" element={<EWatch />} />
+            <Route path="coffee" element={<Coffee />} />
+            <Route path="TheCreativeGateway" element={<TheCreativeGateway />} />
+            <Route path="burgerz" element={<Burgerz />} />
+            <Route path="healthyFood" element={<HealthyFood />} />
+          </Route>
+          <Route
+            path="*"
+            element={
+              <h1 className="flex justify-center items-center h-screen text-6xl text-gray-600">
+                Error | 404
+              </h1>
+            }
+          />
         </Routes>
       </BrowserRouter>
     </div>

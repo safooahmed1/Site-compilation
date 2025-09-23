@@ -3,6 +3,8 @@ import pro1 from "../assets/pro1.png"
 import pro2 from "../assets/pro2.png"
 import pro3 from "../assets/pro3.png"
 import pro4 from "../assets/pro4.png"
+import pro5 from "../assets/pro5.png"
+
 
 export default function Container() {
   return (
@@ -23,8 +25,8 @@ export default function Container() {
         <Link to="/burgerz" className="group w-96 h-auto rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 flex items-center justify-center bg-black/20 overflow-hidden text-white font-bold text-xl">
         <img src={pro4} alt="Project preview" className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-110" />
         </Link>
-        <Link to="/project5" className="group w-96 h-auto rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 flex items-center justify-center bg-black/20 overflow-hidden text-white font-bold text-xl">
-          Project 5
+        <Link to="/healthyFood" className="group w-96 h-auto rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 flex items-center justify-center bg-black/20 overflow-hidden text-white font-bold text-xl">
+        <img src={pro5} alt="Project preview" className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-110" />
         </Link>
         <Link to="/project6" className="group w-96 h-auto rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 flex items-center justify-center bg-black/20 overflow-hidden text-white font-bold text-xl">
           Project 6
