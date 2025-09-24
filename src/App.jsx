@@ -5,6 +5,7 @@ import Coffee from "./pages/Coffee";
 import TheCreativeGateway from "./pages/TheCreativeGateway";
 import Burgerz from "./pages/Burgerz";
 import HealthyFood from "./pages/HealthyFood";
+import LoginPage from "./pages/LoginPage";
 
 export default function App() {
   return (
@@ -18,6 +19,7 @@ export default function App() {
             <Route path="TheCreativeGateway" element={<TheCreativeGateway />} />
             <Route path="burgerz" element={<Burgerz />} />
             <Route path="healthyFood" element={<HealthyFood />} />
+            <Route path="loginPage" element={<LoginPage />} />
           </Route>
           <Route
             path="*"

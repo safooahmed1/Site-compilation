@@ -28,7 +28,7 @@ export default function Container() {
         <Link to="/healthyFood" className="group w-96 h-auto rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 flex items-center justify-center bg-black/20 overflow-hidden text-white font-bold text-xl">
         <img src={pro5} alt="Project preview" className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-110" />
         </Link>
-        <Link to="/project6" className="group w-96 h-auto rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 flex items-center justify-center bg-black/20 overflow-hidden text-white font-bold text-xl">
+        <Link to="/loginPage" className="group w-96 h-auto rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 flex items-center justify-center bg-black/20 overflow-hidden text-white font-bold text-xl">
           Project 6
         </Link>
         <Link to="/project7" className="group w-96 h-auto rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 flex items-center justify-center bg-black/20 overflow-hidden text-white font-bold text-xl">
