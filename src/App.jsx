@@ -25,7 +25,7 @@ export default function App() {
             path="*"
             element={
               <h1 className="flex justify-center items-center h-screen text-6xl text-gray-600">
-                Error | 404
+                Not Fond | Error 404
               </h1>
             }
           />
