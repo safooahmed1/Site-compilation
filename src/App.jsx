@@ -6,6 +6,7 @@ import TheCreativeGateway from "./pages/TheCreativeGateway";
 import Burgerz from "./pages/Burgerz";
 import HealthyFood from "./pages/HealthyFood";
 import LoginPage from "./pages/LoginPage";
+import Nintando from "./pages/Nintando";
 
 export default function App() {
   return (
@@ -20,6 +21,7 @@ export default function App() {
             <Route path="burgerz" element={<Burgerz />} />
             <Route path="healthyFood" element={<HealthyFood />} />
             <Route path="loginPage" element={<LoginPage />} />
+            <Route path="nintando" element={<Nintando />} />
           </Route>
           <Route
             path="*"
