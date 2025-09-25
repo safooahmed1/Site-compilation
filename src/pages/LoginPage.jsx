@@ -50,7 +50,7 @@ export default function LoginPage() {
               </div>
               <div className="divider text-white">OR</div>
               {/* formBgd */}
-              <div className="flex flex-col gap-5  ">
+              <div className="flex flex-col gap-5  w-full ">
                 <input
                   type="text"
                   className="p-3 flex-1 w-full rounded-xl bg-transparent backdrop-blur-sm border border-white/20 shadow-2xl transition active:bg-black/40 active:scale-90  hover:scale-110 hover:cursor-pointer focus:outline-0"
