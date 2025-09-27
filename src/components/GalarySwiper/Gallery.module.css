@@ -1,0 +1,48 @@
+/* ✅ Gallery.module.css - الحل الصحيح */
+
+/* بدلاً من html, body استخدم container محدد */
+.galleryContainer {
+  position: relative;
+  height: 100vh; /* أو الطول اللي انت عايزه */
+  width: 100%;
+  background: #000;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #fff;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  background: #000;
+}
+
+.swiperSlide {
+  font-size: 18px;
+  color: #fff;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 40px 60px;
+}
+
+.parallaxBg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 130%;
+  height: 100%;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+}
+
+
+/* إضافات عشان الـ swiper يشتغل صح */
+.swiper :global(.swiper-pagination-bullet) {
+  background: #fff;
+}
+
+.swiper :global(.swiper-button-next),
+.swiper :global(.swiper-button-prev) {
+  color: #fff;
+}

@@ -7,6 +7,7 @@ import Burgerz from "./pages/Burgerz";
 import HealthyFood from "./pages/HealthyFood";
 import LoginPage from "./pages/LoginPage";
 import Nintando from "./pages/Nintando";
+import MarwanPablo from "./pages/MarwanPablo";
 
 export default function App() {
   return (
@@ -22,6 +23,7 @@ export default function App() {
             <Route path="healthyFood" element={<HealthyFood />} />
             <Route path="loginPage" element={<LoginPage />} />
             <Route path="nintando" element={<Nintando />} />
+            <Route path="marwan-pablo" element={<MarwanPablo />} />
           </Route>
           <Route
             path="*"

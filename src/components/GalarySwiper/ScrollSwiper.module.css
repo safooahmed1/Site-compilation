@@ -1,0 +1,63 @@
+/* ScrollSwiper.module.css */
+
+.container {
+  height: 100vh;
+  width: 100%;
+}
+
+.mySwiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiperSlide {
+  text-align: center;
+  font-size: 18px;
+  height: auto;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 40px 60px;
+  color: white;
+}
+
+.title {
+  color: #fff;
+  text-align: center;
+  font-size: 48px; /* أكبر شوية */
+  font-weight: 800;
+  margin-bottom: 40px;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+}
+
+.paragraph {
+  direction: rtl;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  color: rgba(255, 255, 255, 0.95);
+  font-size: 20px; /* أكبر من 16px */
+  line-height: 2.2; /* مساحة أكبر بين الأسطر */
+  margin-bottom: 35px; /* مساحة أكبر بين الفقرات */
+  text-align: right; /* محاذاة يمين للعربي */
+}
+
+/* تخصيص شكل الـ scrollbar */
+.mySwiper :global(.swiper-scrollbar) {
+  background: rgba(255, 255, 255, 0.2);
+  width: 6px;
+  right: 4px;
+  border-radius: 3px;
+}
+
+.mySwiper :global(.swiper-scrollbar-drag) {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 3px;
+}
+
+.paragraph:first-letter {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffd700;
+}
+
+
