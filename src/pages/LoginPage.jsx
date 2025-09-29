@@ -4,7 +4,6 @@ import bg from "../assets/pro6/Backdrop.png";
 import { FaFacebook } from "react-icons/fa";
 import { FaGoogle } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
-import { FaEye } from "react-icons/fa";
 import axios from "axios";
 import toast from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
@@ -22,13 +21,13 @@ export default function LoginPage() {
     backgroundPosition: "center",
   };
 
+  //login logic
   const navigate = useNavigate();
 
   let hundlingSupmit = (values) => {
     let domain = "http://82.112.241.233:1993/";
     let endPoint = "api/auth/Local";
     let url = domain + endPoint;
-    
 
     let data = {
       identifier: values.email,
@@ -38,16 +37,14 @@ export default function LoginPage() {
     axios
       .post(url, data)
       .then((res) => {
-        let tokin = res.data.jwt
-        toast.success("Success Login")
-        sessionStorage.setItem('jwt', tokin )
-        navigate("/Home")
+        let tokin = res.data.jwt;
+        toast.success("Success Login");
+        sessionStorage.setItem("jwt", tokin);
+        navigate("/Home");
       })
       .catch((err) => {
-        toast.error(err.response.data.error.message)
+        toast.error(err.response.data.error.message);
       });
-
-    // console.log(data);
   };
 
   const validationSchema = Yup.object({

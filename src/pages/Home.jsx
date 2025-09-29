@@ -8,13 +8,13 @@ export default function Home() {
 
   useEffect(() => {
     let jwt = sessionStorage.getItem("jwt");
+    let domain = 'http://82.112.241.233:1993';
+    let endPoint = '/api/users/me';
+    let url = domain + endPoint;
+
     if (!jwt) {
       navigate("/loginPage");
     } else {
-      let domain = "http://82.112.241.233:1993/";
-      let endPoint = "api/auth/Local";
-      let url = domain + endPoint;
-
       axios
         .get(url, {
           headers: {
@@ -23,11 +23,10 @@ export default function Home() {
         })
         .then((res) => {
           setUsetInfo(res.data);
-          console.log(res);
         })
         .catch((err) => {
           sessionStorage.clear;
-          // navigate("/loginPage");
+          navigate("/loginPage");
           console.log(err);
         });
     }
