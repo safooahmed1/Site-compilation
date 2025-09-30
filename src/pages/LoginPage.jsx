@@ -7,6 +7,9 @@ import { FaGithub } from "react-icons/fa";
 import axios from "axios";
 import toast from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
+import { useEffect } from "react";
+import { Loader } from "../store";
+import LoadeR from "../components/LoadeR";
 
 export default function LoginPage() {
   let parentStyle = {
@@ -23,6 +26,15 @@ export default function LoginPage() {
 
   //login logic
   const navigate = useNavigate();
+  const openLoader = Loader();
+
+  useEffect(() => {
+    let jwt = sessionStorage.getItem("jwt");
+
+    if (jwt) {
+      navigate("/adminPage");
+    }
+  });
 
   let hundlingSupmit = (values) => {
     let domain = "http://82.112.241.233:1993/";
@@ -34,13 +46,18 @@ export default function LoginPage() {
       password: values.password,
     };
 
+    openLoader();
+     
     axios
       .post(url, data)
       .then((res) => {
         let tokin = res.data.jwt;
-        toast.success("Success Login");
         sessionStorage.setItem("jwt", tokin);
-        navigate("/Home");
+        setTimeout(() => {
+          toast.success("Success Login");
+          navigate("/adminPage");
+          closeLoader();
+        }, 2000);
       })
       .catch((err) => {
         toast.error(err.response.data.error.message);
@@ -55,6 +72,7 @@ export default function LoginPage() {
   return (
     <>
       <div style={parentStyle} className="overflow-hidden cursor-default">
+        {index && <LoadeR/>}
         {/* card */}
         <div className="w-[500px] px-[64px] py-[48px] bg-white/25 backdrop-brightness-90 border border-white/20 shadow-2xl rounded-xl animate__animated animate__backInUp ">
           {/* container */}

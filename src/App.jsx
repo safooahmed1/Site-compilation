@@ -9,7 +9,7 @@ import LoginPage from "./pages/LoginPage";
 import Nintando from "./pages/Nintando";
 import MarwanPablo from "./pages/MarwanPablo";
 import { Toaster } from "react-hot-toast";
-import Home from "./pages/Home";
+import AdminPage from "./pages/AdminPage";
 
 export default function App() {
   return (
@@ -25,7 +25,7 @@ export default function App() {
             <Route path="burgerz" element={<Burgerz />} />
             <Route path="healthyFood" element={<HealthyFood />} />
             <Route path="loginPage" element={<LoginPage />} />
-            <Route path="Home" element={<Home />} />
+            <Route path="adminPage" element={<AdminPage />} />
             <Route path="nintando" element={<Nintando />} />
             <Route path="marwan-pablo" element={<MarwanPablo />} />
           </Route>
