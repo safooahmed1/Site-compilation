@@ -14,7 +14,7 @@ import styles from "./Gallery.module.css";
 // import required modules
 import { Parallax, Pagination, Navigation } from "swiper/modules";
 import Sec1 from "./Sec1";
-import Sec2 from "./Sec2";
+// import Sec2 from "./Sec2";
 import Sec3 from "./Sec3";
 
 let picStyle = {
@@ -53,9 +53,9 @@ export default function Gallery() {
         <SwiperSlide className={styles.swiperSlide}>
           <Sec1 />
         </SwiperSlide>
-        <SwiperSlide className={styles.swiperSlide}>
+        {/* <SwiperSlide className={styles.swiperSlide}>
           <Sec2 />
-        </SwiperSlide>
+        </SwiperSlide> */}
         <SwiperSlide className={styles.swiperSlide}>
           <Sec3 />
         </SwiperSlide>
