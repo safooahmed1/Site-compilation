@@ -8,9 +8,8 @@ import axios from "axios";
 import toast from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
-import { Loader } from "../store";
-import LoadeR from "../components/LoadeR";
-
+import { LoadeR } from "../store";
+import Loader from "../components/Loader";
 export default function LoginPage() {
   let parentStyle = {
     color: "#fff",
@@ -23,10 +22,10 @@ export default function LoginPage() {
     backgroundSize: "cover",
     backgroundPosition: "center",
   };
-
+  
   //login logic
   const navigate = useNavigate();
-  const openLoader = Loader();
+  const { index, openLoader, closeLoader } = LoadeR();
 
   useEffect(() => {
     let jwt = sessionStorage.getItem("jwt");
@@ -72,7 +71,7 @@ export default function LoginPage() {
   return (
     <>
       <div style={parentStyle} className="overflow-hidden cursor-default">
-        {index && <LoadeR/>}
+        {index && <Loader/>}
         {/* card */}
         <div className="w-[500px] px-[64px] py-[48px] bg-white/25 backdrop-brightness-90 border border-white/20 shadow-2xl rounded-xl animate__animated animate__backInUp ">
           {/* container */}

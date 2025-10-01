@@ -7,7 +7,6 @@ export default function AdminPage() {
   const [userInfo, setUsetInfo] = useState({});
 
   const Logout = () => {
-    // sessionStorage.clear;
     sessionStorage.removeItem("jwt");
   };
 
