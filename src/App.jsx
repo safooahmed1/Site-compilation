@@ -10,6 +10,7 @@ import Nintando from "./pages/Nintando";
 import MarwanPablo from "./pages/MarwanPablo";
 import { Toaster } from "react-hot-toast";
 import AdminPage from "./pages/AdminPage";
+import { Japan } from "./pages/Japan";
 
 export default function App() {
   return (
@@ -28,6 +29,7 @@ export default function App() {
             <Route path="adminPage" element={<AdminPage />} />
             <Route path="nintando" element={<Nintando />} />
             <Route path="marwan-pablo" element={<MarwanPablo />} />
+            <Route path="japan" element={<Japan />} />
           </Route>
           <Route
             path="*"

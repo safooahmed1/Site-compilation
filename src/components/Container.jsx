@@ -7,6 +7,7 @@ import pro5 from "../assets/pro5.png"
 import pro6 from "../assets/pro6.png"
 import pro7 from "../assets/pro7.png"
 import pro8 from "../assets/pro8.png"
+import pro9 from "../assets/pro9.png"
 
 
 export default function Container() {
@@ -40,8 +41,8 @@ export default function Container() {
         <Link to="/marwan-pablo" className="group w-96 h-auto rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 flex items-center justify-center bg-black/20 overflow-hidden text-white font-bold text-xl">
         <img src={pro8} alt="Project preview" className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-110" />
         </Link>
-        <Link to="/project9" className="group w-96 h-auto rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 flex items-center justify-center bg-black/20 overflow-hidden text-white font-bold text-xl">
-          Project 9
+        <Link to="/japan" className="group w-96 h-auto rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 flex items-center justify-center bg-black/20 overflow-hidden text-white font-bold text-xl">
+        <img src={pro9} alt="Project preview" className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-110" />
         </Link>
         <Link to="/project10" className="group w-96 h-auto rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 flex items-center justify-center bg-black/20 overflow-hidden text-white font-bold text-xl">
           Project 10
@@ -90,6 +91,12 @@ export default function Container() {
         </Link>
         <Link to="/project25" className="group w-96 h-auto rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 flex items-center justify-center bg-black/20 overflow-hidden text-white font-bold text-xl">
           Project 25
+        </Link>
+        <Link to="/project25" className="group w-96 h-auto rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 flex items-center justify-center bg-black/20 overflow-hidden text-white font-bold text-xl">
+          Project 26
+        </Link>
+        <Link to="/project25" className="group w-96 h-auto rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 flex items-center justify-center bg-black/20 overflow-hidden text-white font-bold text-xl">
+          Project 27
         </Link>
       </div>
     </>
