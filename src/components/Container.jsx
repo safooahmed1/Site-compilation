@@ -44,8 +44,8 @@ export default function Container() {
         <Link to="/japan" className="group w-96 h-auto rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 flex items-center justify-center bg-black/20 overflow-hidden text-white font-bold text-xl">
         <img src={pro9} alt="Project preview" className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-110" />
         </Link>
-        <Link to="/project10" className="group w-96 h-auto rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 flex items-center justify-center bg-black/20 overflow-hidden text-white font-bold text-xl">
-          Project 10
+        <Link to="/Cybertruck" className="group w-96 h-auto rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 flex items-center justify-center bg-black/20 overflow-hidden text-white font-bold text-xl">
+          Cybertruck
         </Link>
         <Link to="/project11" className="group w-96 h-auto rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 flex items-center justify-center bg-black/20 overflow-hidden text-white font-bold text-xl">
           Project 11
